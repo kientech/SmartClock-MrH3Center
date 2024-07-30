@@ -66,7 +66,7 @@ const Events = () => {
 
   const handleDeleteEvent = async () => {
     try {
-      await axios.delete(`http://127.0.0.1:4040/events/${selectedEvent._id}`);
+      await axios.delete(`https://smartclock-mrh3center.onrender.com/events/${selectedEvent._id}`);
       fetchEvents(); // Refresh events list after deletion
     } catch (error) {
       console.error("Error deleting event:", error);

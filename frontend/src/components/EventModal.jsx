@@ -32,7 +32,7 @@ const EventModal = ({ isOpen, onClose, onEventCreated }) => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:4040/events",
+        "https://smartclock-mrh3center.onrender.com/events",
         eventData
       );
       toast.success("Create Event Successfully!");

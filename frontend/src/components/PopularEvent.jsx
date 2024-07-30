@@ -11,7 +11,7 @@ const PopularEvent = () => {
   useEffect(() => {
     const fetchUpcomingEvent = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:4040/events/upcoming-event');
+        const response = await axios.get('https://smartclock-mrh3center.onrender.com/events/upcoming-event');
         const eventData = response.data.data;
         const eventTime = new Date(eventData.time).getTime();
         const currentTime = Date.now();

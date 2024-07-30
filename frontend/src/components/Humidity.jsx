@@ -6,7 +6,7 @@ const Humidity = () => {
     useEffect(() => {
         const fetchTemperature = async () => {
           try {
-            const response = await fetch('http://localhost:3001/weather');
+            const response = await fetch('https://smartclock-mrh3center-1.onrender.com/weather');
             const data = await response.json();
             setHumidity(data.humidity || "No data");
           } catch (error) {

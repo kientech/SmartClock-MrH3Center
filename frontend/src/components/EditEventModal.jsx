@@ -23,7 +23,7 @@ const EditEventModal = ({ isOpen, onClose, event, onSave }) => {
       const selectedTime = new Date(time);
       const utcTime = new Date(selectedTime.getTime() + selectedTime.getTimezoneOffset() * 60000);
       
-      await axios.patch(`http://127.0.0.1:4040/events/${event._id}`, {
+      await axios.patch(`https://smartclock-mrh3center.onrender.com/events/${event._id}`, {
         title,
         description,
         time: utcTime,

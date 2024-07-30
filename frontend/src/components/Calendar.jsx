@@ -23,7 +23,7 @@ const Calendar = () => {
     // Fetch events data from your API
     const fetchEvents = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:4040/events");
+        const response = await axios.get("https://smartclock-mrh3center.onrender.com/events");
         // Process and store event dates
         setEvents(response.data.map(event => new Date(event.date)));
       } catch (error) {
